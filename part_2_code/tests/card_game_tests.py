@@ -26,6 +26,8 @@ class TestCardGame(unittest.TestCase):
         result = self.game.highest_card(self.card3, self.card4)
         self.assertEqual(expected, result)
 
-    @unittest.skip("not witten yet")   
+    # @unittest.skip("not witten yet")   
     def test_cards_total(self):
-        pass
+        expected = "You have a total of 26"
+        result = self.game.cards_total(self.hand)
+        self.assertEqual(expected, result)
