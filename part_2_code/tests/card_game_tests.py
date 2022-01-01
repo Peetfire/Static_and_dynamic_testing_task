@@ -20,10 +20,12 @@ class TestCardGame(unittest.TestCase):
         result = self.game.check_for_ace(self.card1)
         self.assertEqual(expected, result)
 
-    @unittest.skip("not witten yet")     
+    # @unittest.skip("not witten yet")     
     def test_highest_card(self):
-        pass
-    
+        expected = self.card3
+        result = self.game.highest_card(self.card3, self.card4)
+        self.assertEqual(expected, result)
+
     @unittest.skip("not witten yet")   
     def test_cards_total(self):
         pass
